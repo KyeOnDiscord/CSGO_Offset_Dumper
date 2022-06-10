@@ -63,6 +63,6 @@ ___You can either build the project with the instructions below or download the 
 
 
 ### Acknowledgments
-* [GH Offset Dumper](https://github.com/guided-hacking/GH-Offset-Dumper)'s was massively inspired by this.
+* [GH Offset Dumper](https://github.com/guided-hacking/GH-Offset-Dumper)'s massively inspired this.
 * [frk1](https://github.com/frk1)'s [hazedumper](https://github.com/frk1/hazedumper)'s config files.
 * [Spectre.Console](https://github.com/spectreconsole/spectre.console) for an amazing and easy way to create good looking console apps.
