@@ -3,15 +3,15 @@ D:\Visual Studio Projects\CSGO_Offset_Dumper\bin\x86\Debug\net6.0-windows\CSGO_O
 D:\Visual Studio Projects\CSGO_Offset_Dumper\bin\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.runtimeconfig.json
 D:\Visual Studio Projects\CSGO_Offset_Dumper\bin\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.dll
 D:\Visual Studio Projects\CSGO_Offset_Dumper\bin\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.pdb
+D:\Visual Studio Projects\CSGO_Offset_Dumper\bin\x86\Debug\net6.0-windows\Spectre.Console.dll
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.csproj.AssemblyReference.cache
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.GeneratedMSBuildEditorConfig.editorconfig
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.AssemblyInfoInputs.cache
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.AssemblyInfo.cs
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.csproj.CopyComplete
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.dll
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\refint\CSGO_Offset_Dumper.dll
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.pdb
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.genruntimeconfig.cache
 D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\ref\CSGO_Offset_Dumper.dll
-D:\Visual Studio Projects\CSGO_Offset_Dumper\bin\x86\Debug\net6.0-windows\Spectre.Console.dll
-D:\Visual Studio Projects\CSGO_Offset_Dumper\obj\x86\Debug\net6.0-windows\CSGO_Offset_Dumper.csproj.CopyComplete
