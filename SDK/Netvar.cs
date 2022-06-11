@@ -1,5 +1,6 @@
 ﻿using static CSGO_Offset_Dumper.SDK.SourceSDK;
 using Spectre.Console;
+using System.IO;
 namespace CSGO_Offset_Dumper.SDK
 {
     internal static class Netvar
@@ -9,17 +10,18 @@ namespace CSGO_Offset_Dumper.SDK
             for (IntPtr currNode = clientClass; currNode != IntPtr.Zero; currNode = currNode.Deference<ClientClass>().m_pNext)
             {
                 ClientClass? node = currNode.Deference<ClientClass>();
-                RecvTable? table = node.m_pRecvTable.Deference<RecvTable>();
 
+                RecvTable? table = node.m_pRecvTable.Deference<RecvTable>();
 
                 if (tableName == table.m_pNetTableName)
                 {
                     return GetOffset(node.m_pRecvTable, tableName, netvarName);
                 }
             }
-
             return 0;
         }
+
+
 
 
         internal static int GetOffset(IntPtr ptable, string tableName, string netvarName)

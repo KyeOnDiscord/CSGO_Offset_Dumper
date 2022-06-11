@@ -42,16 +42,16 @@ namespace CSGO_Offset_Dumper.SDK
             string m_pParentArrayPropName;
         };
 
-        //[return: MarshalAs(UnmanagedType.IUnknown)]
         [StructLayout(LayoutKind.Sequential)]
         internal class ClientClass
         {
             public IntPtr m_pCreateFn;
             public IntPtr m_pCreateEventFn;
-            string m_pNetworkName;
+            public string m_pNetworkName;
             public IntPtr m_pRecvTable;//RecvTable*
             public IntPtr m_pNext;//ClientClass*
-            public int m_ClassID;
+            //public int m_ClassID; This only works inside csgo not when we load a dll so yeah.
         };
+
     }
 }

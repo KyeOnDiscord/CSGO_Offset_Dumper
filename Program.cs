@@ -19,13 +19,13 @@ namespace CSGO_Offset_Dumper
         static void Main(string[] args)
         {
             Console.Title = "CSGO Offset Dumper C# | Made by KyeOnDiscord";
-
+            AppConfig.InitConfig();
             AnsiConsole.Write(new FigletText("CSGO Offset Dumper").LeftAligned().Color(Color.Blue));
 
             if (!File.Exists(configFilePath))
             {
                 AnsiConsole.MarkupLine($"[red][[Error]] Could not find {configFilePath}![/]");
-                Console.ReadKey();
+                Console.WriteLine();
                 return;
             }
 
@@ -71,15 +71,29 @@ namespace CSGO_Offset_Dumper
 
                             IntPtr dwGetallClassesAddr = internalClientDll + dwGetAllClassesOffset;
 
+                            var allClasses = dwGetAllClasses.ClassExporter.GetAllClasses(dwGetallClassesAddr);
+
                             SDK.Netvar.GetNetvarOffsets(config.netvars, ref Netvars, dwGetallClassesAddr);
 
 
                             AnsiConsole.MarkupLine($"[green]Found [blue]{Netvars.Count}/{config.netvars.Length}[/] netvars and [blue]{Signatures.Count}/{config.signatures.Length}[/] signatures[/]");
+
+                            //Dumps netvars and signatures
                             Dumper.DumpCPP(Netvars, Signatures, config.filename);
                             Dumper.DumpCSharp(Netvars, Signatures, config.filename);
                             Dumper.DumpJson(Netvars, Signatures, config.filename);
                             Dumper.DumpTOML(Netvars, Signatures, config.filename);
-                            Dumper.DumpCheatTable(Netvars, Signatures, config.filename);
+                            Dumper.DumpCheatTable(Netvars, Signatures, config.filename, allClasses);
+
+
+                            //Dumps all netvar classes
+                            Dumper.DumpJson(allClasses);
+                            Dumper.DumpCPP(allClasses);
+
+
+                            AnsiConsole.MarkupLine("");
+                            AnsiConsole.MarkupLine("");
+                            AnsiConsole.MarkupLine($"[bold underline green]Finished![/]");
                         }
                     }
                 }
