@@ -25,7 +25,7 @@ namespace CSGO_Offset_Dumper
             if (!File.Exists(configFilePath))
             {
                 AnsiConsole.MarkupLine($"[red][[Error]] Could not find {configFilePath}![/]");
-                Console.WriteLine();
+                Console.ReadKey();
                 return;
             }
 
