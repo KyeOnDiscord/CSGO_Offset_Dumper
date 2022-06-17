@@ -63,7 +63,7 @@ namespace CSGO_Offset_Dumper.SDK
 
                 int offset = GetNetVarOffset(netvar.table, netvar.prop, dwGetallClassesAddr);
 
-                if (netvar.offset > 0)
+                if (netvar.offset != 0)
                 {
                     offset += netvar.offset;
                 }
