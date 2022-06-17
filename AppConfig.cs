@@ -17,6 +17,7 @@
         public class ConfigObj
         {
             public string ExportNamespace { get; set; } = "kyedumper";
+            public string FallbackConfigURL { get; set; } = "https://raw.githubusercontent.com/frk1/hazedumper/master/config.json";
 
             //These are the Source classes to include under LocalPlayer, CCSPlayer and all the classes it inherits
             public string[] LocalPlayerClasses { get; set; } = new string[] { "CBaseEntity", "CBaseAnimating", "CBaseAnimatingOverlay", "CBaseFlex", "CBaseCombatCharacter", "CBasePlayer", "CCSPlayer" };

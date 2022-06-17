@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Net;
 using System.Text.Json;
 using CSGO_Offset_Dumper.JsonClasses;
 using Spectre.Console;
@@ -24,9 +25,8 @@ namespace CSGO_Offset_Dumper
 
             if (!File.Exists(configFilePath))
             {
-                AnsiConsole.MarkupLine($"[red][[Error]] Could not find {configFilePath}![/]");
-                Console.ReadKey();
-                return;
+                AnsiConsole.MarkupLine($"[red][[Error]] Could not find {configFilePath}! Downloading config from {AppConfig.CurrentConfig.FallbackConfigURL}![/]");
+                new WebClient().DownloadFile(AppConfig.CurrentConfig.FallbackConfigURL, configFilePath);
             }
 
 
