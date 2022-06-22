@@ -1,8 +1,12 @@
 # CSGO Offset Dumper
 
+[![CS:GO on steam](https://img.shields.io/badge/Steam-CS%3AGO-grey?labelColor=black&logo=Steam)](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/)
 ![](https://img.shields.io/github/languages/code-size/KyeOnDiscord/CSGO_Offset_Dumper)
 [![GitHub issues](https://img.shields.io/github/issues/KyeOnDiscord/CSGO_Offset_Dumper)](https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/issues)
 [![GitHub stars](https://img.shields.io/github/stars/KyeOnDiscord/CSGO_Offset_Dumper)](https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/stargazers)
+
+
+
 
 
 An offset dumper for [Counter-Strike: Global Offensive](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/) written entirely in C#.
@@ -14,7 +18,7 @@ An offset dumper for [Counter-Strike: Global Offensive](https://store.steampower
 ___You can either build the project with the instructions below or download the prebuilt executable in [releases](https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/releases)___
 
 ### Prerequisites
-* [.NET 6 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* [![.NET 6 SDK](https://img.shields.io/badge/.NET-6_SDK-5a25e3)](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 ### Building the Project
 1. Clone the repo
