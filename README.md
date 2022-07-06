@@ -1,7 +1,8 @@
 # CSGO Offset Dumper
 
 [![CS:GO on steam](https://img.shields.io/badge/Steam-CS%3AGO-grey?labelColor=black&logo=Steam)](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/)
-![](https://img.shields.io/github/languages/code-size/KyeOnDiscord/CSGO_Offset_Dumper)
+![](https://img.shields.io/github/languages/top/KyeOnDiscord/csgo_offset_dumper)
+![](https://img.shields.io/github/downloads/kyeondiscord/csgo_offset_dumper/total?color=32a852)
 [![GitHub issues](https://img.shields.io/github/issues/KyeOnDiscord/CSGO_Offset_Dumper)](https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/issues)
 [![GitHub stars](https://img.shields.io/github/stars/KyeOnDiscord/CSGO_Offset_Dumper)](https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/stargazers)
 
@@ -54,10 +55,10 @@ ___You can either build the project with the instructions below or download the 
 ✔ Cheat Engine Table contains a 'Local Player' section which is readily available to modify any of the local player netvars.
 
 ✔ Dumps offsets to the following file formats:
-* C++ (.h)
-* C# (.cs)
-* JSON (.json) (Also exports min.json which is the json in one line without line breaks)
-* TOML (.toml)
+* [C++ (.h)](https://github.com/topics/cpp)
+* [C# (.cs)](https://github.com/topics/csharp)
+* [JSON (.json)](https://github.com/topics/json) (Also exports min.json which is the json in one line without line breaks)
+* [TOML (.toml)](https://github.com/toml-lang/toml)
 * [Cheat Engine](https://www.cheatengine.org/)'s Cheat Tables (.ct)
 
 ### To Do:
