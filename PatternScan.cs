@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 using static CSGO_Offset_Dumper.Win32;
 using Spectre.Console;
 namespace CSGO_Offset_Dumper
@@ -12,9 +6,7 @@ namespace CSGO_Offset_Dumper
     //https://guidedhacking.com/threads/simple-c-pattern-scan.13981/
     internal class PatternScan
     {
-
-
-        internal unsafe static void GetSignatureOffsets(JsonClasses.Config.Signature[] SignatureConfig, ref Dictionary<string, int> Signatures)
+        internal static void GetSignatureOffsets(JsonClasses.Config.Signature[] SignatureConfig, ref Dictionary<string, int> Signatures)
         {
             foreach (var sig in SignatureConfig)
             {
@@ -54,19 +46,15 @@ namespace CSGO_Offset_Dumper
                 {
                     offset -= (int)mod.modBaseAddr;
                 }
-
                 AnsiConsole.MarkupLine($"[grey]Found signature [blue]{sig.name}[/] -> [blue]0x{offset:X}[/][/]");
                 Signatures.Add(sig.name, offset);
             }
-
-
         }
 
 
 
         public static bool CheckPattern(string pattern, byte[] array2check)
         {
-            int len = array2check.Length;
             string[] strBytes = pattern.Split(' ');
             int x = 0;
             foreach (byte b in array2check)

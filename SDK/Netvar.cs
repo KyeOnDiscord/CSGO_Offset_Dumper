@@ -21,9 +21,13 @@ namespace CSGO_Offset_Dumper.SDK
             return 0;
         }
 
-
-
-
+        /// <summary>
+        /// Our recursive function to return the netvar offset.
+        /// </summary>
+        /// <param name="ptable"></param>
+        /// <param name="tableName"></param>
+        /// <param name="netvarName"></param>
+        /// <returns></returns>
         internal static int GetOffset(IntPtr ptable, string tableName, string netvarName)
         {
             RecvTable? table = ptable.Deference<RecvTable>();

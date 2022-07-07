@@ -7,15 +7,21 @@ namespace CSGO_Offset_Dumper
 {
     internal class Program
     {
+        /// <summary>
+        /// The location of the configuration file the signatures and netvars are saved in.
+        /// </summary>
         const string configFilePath = "config.json";
+        /// <summary>
+        /// The Process ID of CSGO
+        /// </summary>
         public static int ProcessID { get; private set; }
+        /// <summary>
+        /// Field to get the offset of dwGetAllClasses from the signature scan. (We must start signature scan first before netvar scan because netvars require this signature.
+        /// </summary>
         private static int dwGetAllClassesOffset => Signatures.FirstOrDefault(x => x.Key.Equals("dwGetAllClasses")).Value;
-
         private static Dictionary<string, int> Signatures = new();
         private static Dictionary<string, int> Netvars = new();
-
         private const string clientdll = "client.dll";
-
 
         static void Main(string[] args)
         {
