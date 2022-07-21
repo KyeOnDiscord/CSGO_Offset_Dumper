@@ -16,7 +16,7 @@ An offset dumper for [Counter-Strike: Global Offensive](https://store.steampower
 
 
 ## Getting Started
-___You can either build the project with the instructions below or download the prebuilt executable in [releases](https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/releases)___
+___You can either build the project with the instructions below or download the prebuilt executable in [releases].(https://github.com/KyeOnDiscord/CSGO_Offset_Dumper/releases)___
 
 ### Prerequisites
 * [![.NET 6 SDK](https://img.shields.io/badge/.NET-6_SDK-5a25e3)](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
