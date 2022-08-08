@@ -41,9 +41,8 @@ namespace CSGO_Offset_Dumper.dwGetAllClasses
                 IntPtr propAddress = table.m_pProps + i * 60;
 
                 RecvProp? prop = (propAddress).Deference<RecvProp>();
-                if (prop != null)//Props are never null but might as well check for it
+                // there is no need to existence check a existing value wtf!?
                     yield return new SourceClass() { ClassName = networkName, Offset = prop.m_Offset, VariableName = prop.m_pVarName };
-            }
         }
     }
 }
